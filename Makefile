@@ -22,5 +22,5 @@ bash:
 bash-root:
 	docker-compose exec web bash
 
-favicons:
-	npm run favicons
+favicons-opengraph:
+	npm run favicons-opengraph
