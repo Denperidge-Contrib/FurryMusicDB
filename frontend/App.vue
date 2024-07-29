@@ -1,11 +1,11 @@
 <template>
     <navbar/>
 
-    <div class="container mb-4">
+    <main class="container mb-4">
         <breadcrumbs/>
 
         <router-view/>
-    </div>
+    </main>
 
     <div class="toast-container position-fixed top-0 end-0 p-3">
     </div>

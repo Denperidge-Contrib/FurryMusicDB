@@ -1,7 +1,7 @@
 <template>
     <h1>Explore Musicians</h1>
 
-    <div class="row">
+    <section class="row" role="search">
         <div class="col-md-4 col-lg-3 mb-md-0 mb-3">
             <h3>Filter Results</h3>
 
@@ -56,7 +56,7 @@
                 </div>
             </loading>
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup lang="ts">
