@@ -8,6 +8,8 @@ import './scss/style.scss';
 import 'bootstrap';
 import {installCurrentVueInstance} from "~/vendor/vueInstance.ts";
 
+import {createHead} from "@unhead/vue";
+
 const router = createRouter({
     history: createWebHashHistory(),
     routes,
@@ -15,7 +17,10 @@ const router = createRouter({
 
 const app = createApp(App)
 
+const head = createHead();
+
 app.use(router)
+app.use(head)
 setupApi(app)
 installCurrentVueInstance(app)
 
