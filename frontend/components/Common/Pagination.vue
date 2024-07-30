@@ -65,7 +65,8 @@
 <script setup lang="ts">
 import {computed, ref, toRef, watch} from "vue";
 import PaginationItem from "~/components/Common/PaginationItem.vue";
-import {clamp} from "lodash";
+import lodash from "lodash";
+const {clamp} = lodash
 
 const props = defineProps({
     total: {

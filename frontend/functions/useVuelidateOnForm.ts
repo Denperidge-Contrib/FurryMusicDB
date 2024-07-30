@@ -2,7 +2,9 @@ import useVuelidate from "@vuelidate/core";
 import {useResettableRef} from "./useResettableRef";
 import {computed, unref} from "vue";
 import {useEventBus} from "@vueuse/core";
-import {cloneDeep, merge} from "lodash";
+// https://vike.dev/broken-npm-package#named-export-not-found
+import lodash from "lodash";
+const {cloneDeep, merge} = lodash;
 
 export function useVuelidateOnForm(validations = {}, blankForm = {}, options = {}) {
     const formEventBus = useEventBus('form_tabs');

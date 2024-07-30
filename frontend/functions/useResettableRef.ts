@@ -1,5 +1,6 @@
 import {ref, toValue} from "vue";
-import {cloneDeep} from "lodash";
+import lodash from "lodash";
+const {cloneDeep} = lodash;
 
 export function useResettableRef(original) {
     const record = ref(cloneDeep(toValue(original)));

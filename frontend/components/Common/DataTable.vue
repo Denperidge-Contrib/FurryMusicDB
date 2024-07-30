@@ -286,7 +286,7 @@
 </template>
 
 <script setup lang="ts">
-import {filter, forEach, get, includes, indexOf, isEmpty, map, reverse, slice, some} from 'lodash';
+import lodash from 'lodash';
 import Icon from './Icon.vue';
 import {computed, onMounted, ref, shallowRef, toRaw, toRef, useSlots, watch} from "vue";
 import {watchDebounced} from "@vueuse/core";
@@ -295,6 +295,7 @@ import FormCheckbox from "~/components/Form/FormCheckbox.vue";
 import Pagination from "./Pagination.vue";
 import useOptionalStorage from "~/functions/useOptionalStorage";
 import {useInjectAxios} from "~/vendor/api";
+const {filter, forEach, get, includes, indexOf, isEmpty, map, reverse, slice, some} = lodash;
 
 const props = defineProps({
     id: {

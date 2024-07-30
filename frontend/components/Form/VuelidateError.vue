@@ -9,8 +9,9 @@
 </template>
 
 <script setup lang="ts">
-import {get, map} from "lodash";
+import lodash from "lodash";
 import {computed} from "vue";
+const {get, map} = lodash;
 
 const props = defineProps({
     field: {

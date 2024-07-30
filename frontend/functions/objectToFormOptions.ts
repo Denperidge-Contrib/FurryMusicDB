@@ -1,4 +1,5 @@
-import {map} from 'lodash';
+import lodash from 'lodash';
+const {map} = lodash;
 
 export default function objectToFormOptions(array) {
     return map(array, (outerValue, outerKey) => {

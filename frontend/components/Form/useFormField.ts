@@ -1,5 +1,6 @@
 import {computed} from "vue";
-import {has} from "lodash";
+import lodash from "lodash";
+const {has} = lodash;
 
 export const formFieldProps = {
     field: {

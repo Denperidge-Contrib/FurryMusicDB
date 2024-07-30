@@ -9,15 +9,20 @@
         "*"
       ]
     },
+    /* 
+    Some of these options are recommended by
+    https://github.com/vikejs/vike/blob/main/examples/vue-full/tsconfig.json
+    */
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "module": "ESNext",
+    "module": "ES2020",
     "lib": [
-      "ES2020",
+      "ESNext",
       "DOM",
       "DOM.Iterable"
     ],
     "skipLibCheck": true,
+    "esModuleInterop": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,

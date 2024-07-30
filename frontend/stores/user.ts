@@ -1,8 +1,9 @@
 import {createGlobalState, useAsyncState} from "@vueuse/core";
 import {computed, ComputedRef, Ref} from "vue";
 import {useInjectAxios} from "~/vendor/api.ts";
-import {includes} from "lodash";
+import lodash from "lodash";
 import {Permissions} from "~/stores/permissions.ts";
+const {includes} = lodash;
 
 interface User {
     id: string,
