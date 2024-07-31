@@ -16,5 +16,8 @@ export default defineConfig({
         },
         extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json', '.vue']
     },
-    plugins: [vue(), vike()],
+    plugins: [
+        vike({}),
+        vue(),
+    ],
 })

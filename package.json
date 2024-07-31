@@ -4,30 +4,35 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "tsx ./frontend/express-entry.ts",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "cross-env NODE_ENV=production tsx ./express-entry.ts"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "@universal-middleware/express": "^0.1.1",
+    "@vue/compiler-sfc": "^3.4.35",
     "@vuelidate/core": "^2.0.3",
     "@vuelidate/validators": "^2.0.4",
     "@vueuse/core": "^10.2.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5",
+    "express": "^4.19.2",
     "lodash": "^4.17.21",
     "luxon": "^3.4.3",
     "social-links": "^1.14.0",
     "sweetalert2": "11.4.8",
+    "tsx": "^4.16.3",
     "vue-axios": "^3.5.2",
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.6",
+    "@types/express": "^4.17.21",
     "@types/lodash": "^4.14.198",
     "@types/luxon": "^3.3.2",
-    "@vitejs/plugin-vue": "^5",
+    "@vitejs/plugin-vue": "^5.1.1",
     "@vue/eslint-config-typescript": "^13",
     "sass": "^1.66.1",
     "typescript": "^5.2.2",

@@ -1,45 +1,30 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "~/*": [
-        "frontend/*"
-      ],
-      "!/*": [
-        "*"
-      ]
-    },
-    /* 
-    Some of these options are recommended by
-    https://github.com/vikejs/vike/blob/main/examples/vue-full/tsconfig.json
-    */
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "module": "ES2020",
-    "lib": [
-      "ESNext",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "skipLibCheck": true,
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
     "esModuleInterop": true,
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "module": "ESNext",
     "noEmit": true,
+    "moduleResolution": "Bundler",
+    "target": "ES2022",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "types": [
+      "vite/client",
+      "vike-vue"
+    ],
     "jsx": "preserve",
-    /* Linting */
-    "strict": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "jsxImportSource": "vue"
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
+  "exclude": [
+    "dist"
   ]
 }

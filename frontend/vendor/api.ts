@@ -1,6 +1,6 @@
 import {inject, InjectionKey} from "vue";
 import axios, {AxiosStatic} from "axios";
-import VueAxios from "vue-axios";
+//import VueAxios from "vue-axios";
 
 const AxiosKey = Symbol() as InjectionKey<AxiosStatic>;
 
@@ -14,6 +14,6 @@ export const setupApi = (app) => {
         }
     });
 
-    app.use(VueAxios, axiosInstance);
-    app.provide(AxiosKey, axiosInstance);
+    //app.use(VueAxios, axiosInstance);
+    //app.provide(AxiosKey, axiosInstance);
 };
