@@ -7,6 +7,5 @@
 </template>
 
 <script setup lang="ts">
-import logoUrl from "../assets/logo.svg";
-import sassStyles from "~/scss/style.module.scss"
+import logoUrl from "~/public/icon.svg";
 </script>

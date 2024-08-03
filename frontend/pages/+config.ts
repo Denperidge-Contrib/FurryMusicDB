@@ -9,7 +9,7 @@ export default {
   Head,
 
   // <title>
-  title: "My Vike App",
+  title: "Furry Music Database",
   extends: vikeVue,
   ssr: true
 } satisfies Config;
