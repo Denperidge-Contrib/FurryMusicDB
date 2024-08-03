@@ -5,6 +5,7 @@ declare -p | grep -Ev 'BASHOPTS|BASH_VERSINFO|EUID|PPID|SHELLOPTS|UID' > /contai
 chmod 744 /container.env
 
 chown -R app:app /var/app/uploads
+su-exec app npm run prod &
 
 app_cli init
 

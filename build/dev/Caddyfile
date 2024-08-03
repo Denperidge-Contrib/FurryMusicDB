@@ -1,6 +1,4 @@
 :8080 {
-    root * /var/app/www/frontend/dist
-
     redir /api /api/
     route /api/* {
     	rewrite * /index.php?{query}
@@ -10,7 +8,7 @@
         }
     }
 
-    reverse_proxy * 127.0.0.1:5173
+    reverse_proxy localhost:3000
 
     log {
         output stdout

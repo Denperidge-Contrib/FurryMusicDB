@@ -94,8 +94,9 @@ RUN composer install --no-dev --no-ansi --no-autoloader --no-interaction \
     && composer clear-cache
 
 RUN npm ci --include=dev \
-    && npm cache clean --force \
-    && npm run build
+    && npm cache clean --force
+    #\
+    #&& npm run build
 
 ENV APPLICATION_ENV="production"
 

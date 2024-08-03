@@ -7,7 +7,7 @@ chmod 744 /container.env
 chown -R app:app /var/app/uploads
 
 su-exec app npm ci
-su-exec app npm run build
+su-exec app npm run prod &
 su-exec app composer install
 
 app_cli init

@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "tsx ./frontend/express-entry.ts",
     "build": "vite build",
-    "preview": "cross-env NODE_ENV=production tsx ./express-entry.ts"
+    "prod": "cross-env NODE_ENV=production tsx ./frontend/express-entry.ts"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
@@ -26,6 +26,7 @@
     "axios": "^1.4.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.10.5",
+    "cross-env": "^7.0.3",
     "express": "^4.19.2",
     "lodash": "^4.17.21",
     "luxon": "^3.4.3",
