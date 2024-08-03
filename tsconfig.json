@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "frontend/*"
+      ],
+      "!/*": [
+        "*"
+      ]
+    },
     "strict": true,
     "allowJs": true,
     "checkJs": true,
@@ -12,6 +21,7 @@
     "noEmit": true,
     "moduleResolution": "Bundler",
     "target": "ES2022",
+    "allowImportingTsExtensions": true,
     "lib": [
       "DOM",
       "DOM.Iterable",
@@ -26,5 +36,11 @@
   },
   "exclude": [
     "dist"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
   ]
 }

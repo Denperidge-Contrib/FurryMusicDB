@@ -1,6 +1,6 @@
 import {createGlobalState, useAsyncState} from "@vueuse/core";
 import {computed, ComputedRef, Ref} from "vue";
-import {useInjectAxios} from "~/vendor/api.ts";
+import axios from "axios";
 import lodash from "lodash";
 import {Permissions} from "~/stores/permissions.ts";
 const {includes} = lodash;
@@ -24,7 +24,6 @@ interface UseUserStore {
 
 export const useUserStore: UseUserStore = createGlobalState(
     () => {
-        const axios = useInjectAxios();
         const {
             isLoading,
             state

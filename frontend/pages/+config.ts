@@ -11,4 +11,5 @@ export default {
   // <title>
   title: "My Vike App",
   extends: vikeVue,
+  ssr: true
 } satisfies Config;

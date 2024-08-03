@@ -1,12 +1,12 @@
 <template>
     <nav class="navbar navbar-expand-md" role="navigation" aria-label="main navigation">
         <div class="container">
-            <router-link class="navbar-brand d-flex" to="/">
+            <a class="navbar-brand d-flex" href="/">
                 <img src="/icon.svg" alt="Logo"/>
                 <span class="logotype">
                     Furry Music<br>Database
                 </span>
-            </router-link>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#headerNavbar" aria-controls="headerNavbar"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -15,13 +15,13 @@
             <div class="collapse navbar-collapse" id="headerNavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/about">About</router-link>
+                        <a class="nav-link" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/artists">Musicians</router-link>
+                        <a class="nav-link" href="/artists">Musicians</a>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/labels">Labels</router-link>
+                        <a class="nav-link" href="/labels">Labels</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -35,10 +35,10 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li v-if="isAdmin">
-                                <router-link class="dropdown-item" to="/admin">Administration</router-link>
+                                <a class="dropdown-item" href="/admin">Administration</a>
                             </li>
                             <li>
-                                <router-link class="dropdown-item" to="/profile">My Profile</router-link>
+                                <a class="dropdown-item" href="/profile">My Profile</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="/api/logout">Sign Out</a>
@@ -46,10 +46,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/help">Help</router-link>
+                        <a class="nav-link" href="/help">Help</a>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/donate">Donate</router-link>
+                        <a class="nav-link" href="/donate">Donate</a>
                     </li>
                 </ul>
             </div>
