@@ -1,16 +1,12 @@
-<template>
-  <navbar/>
-
-  <p>MEOW</p>
-
-  <div class="container mb-4">
+<template>  
+    <navbar/>
+    <div class="container mb-4">
       <breadcrumbs/>
 
-      <!--<router-view/>-->
-  </div>
-
-  <div class="toast-container position-fixed top-0 end-0 p-3">
-  </div>
+      <slot></slot>
+    </div>
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -18,4 +14,4 @@ import Navbar from "~/components/Navbar.vue";
 import Breadcrumbs from "~/components/Common/Breadcrumbs.vue";
 </script>
 
-<style module src="~/scss/style.scss"></style>
+<style src="~/scss/style.scss"></style>
